@@ -31,6 +31,10 @@ configurations {
 }
 
 dependencies {
+    // Hibernate
+    implementation(platform("org.hibernate.orm:hibernate-platform:6.4.4.Final"))
+    implementation("org.hibernate.orm:hibernate-core")
+
     // Logging
     implementation("org.apache.logging.log4j:log4j-api:2.22.1")
     implementation("org.apache.logging.log4j:log4j-core:2.22.1")
