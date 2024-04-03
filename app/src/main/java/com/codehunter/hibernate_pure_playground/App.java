@@ -15,5 +15,5 @@ public class App {
     public static void main(String[] args) {
         log.info("App is running");
         System.out.println(new App().getGreeting());
-   is
+    }
 }
