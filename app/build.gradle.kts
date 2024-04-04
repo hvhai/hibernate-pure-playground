@@ -34,6 +34,8 @@ dependencies {
     // Hibernate
     implementation(platform("org.hibernate.orm:hibernate-platform:6.4.4.Final"))
     implementation("org.hibernate.orm:hibernate-core")
+    implementation("jakarta.transaction:jakarta.transaction-api")
+    testImplementation("com.h2database:h2:2.2.224")
 
     // Logging
     implementation("org.apache.logging.log4j:log4j-api:2.22.1")
