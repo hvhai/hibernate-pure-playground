@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.h2.Driver</property>
+        <property name="connection.url">jdbc:h2:./db-basic-type</property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password">pw</property>
+
+        <property name="dialect">org.hibernate.dialect.H2Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hightlight_sql">true</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+
+        <mapping class="com.codehunter.hibernate_pure_playground.basic_type.Account"/>
+        <mapping class="com.codehunter.hibernate_pure_playground.basic_type.Phone"/>
+    </session-factory>
+</hibernate-configuration>
